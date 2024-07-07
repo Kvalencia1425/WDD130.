@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 nav {
   background-color: steelblue;
   padding: 10px;
@@ -14,13 +20,64 @@ h1 {
 }
 
 img {
-  width: 150px; 
+  width: 200px; 
   height: auto;
   border: 1px solid steelblue;
   padding: 2px;
   box-shadow: 0 0 30px gray;
+  float: right; /* Float the image to the right */
+  margin-left: 20px; /* Provide some space between the image and text */
 }
 
 p {
   padding: 10px;
 }
+
+ul {
+  list-style-type: none;
+  padding: 10px;
+}
+
+ul li {
+  margin-bottom: 10px;
+}
+
+.box {
+  margin: 1rem;
+  padding: 1rem;
+  background-color: lightgray;
+  color: darkslategray;
+  border: 1px solid gray;
+}
+/* Class Selectors */
+
+.box {
+  position: relative; /* Set aside container to relative positioning */
+  margin: 1rem;
+  padding: 1rem;
+  background-color: lightgray;
+  color: darkslategray;
+  border: 1px solid gray;
+}
+
+.box img {
+  width: 100%; /* Ensure image fills the container */
+  height: auto;
+  display: block;
+}
+
+.overlay-heading {
+  position: absolute;
+  top: 10px; /* Adjust position from the top */
+  left: 10px; /* Adjust position from the left */
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+  padding: 10px;
+  border: 1px solid gray;
+  color: steelblue;
+}
+
+aside {
+  width: 20em;
+  text-align: center;
+}
+
