@@ -1,6 +1,7 @@
 /* Import Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=font-name&family=optional-2nd-font-name&display=swap');
 
+/* Root variables */
 :root {
     --primary-color: #336699;
     --secondary-color: #FFCC00;
@@ -10,7 +11,7 @@
 
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Roboto', sans-serif; /* Replace with your selected font */
+    font-family: 'YourSelectedFont', sans-serif; /* Replace 'YourSelectedFont' with your chosen font */
     color: var(--text-color);
 }
 
@@ -24,11 +25,11 @@ a {
     text-decoration: none;
 }
 
-/* Limit page width */
+/* Limit page width and center align content */
 body {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
+    max-width: 1200px; /* Adjust as per your design */
+    margin: 0 auto; /* Center align content */
+    padding: 20px; /* Add padding for better readability */
 }
 
 /* Hero section */
@@ -47,7 +48,7 @@ body {
 .hero h1 {
     position: absolute;
     top: 20px;
-    left: 50px;
+    left: 50%;
     transform: translateX(-50%);
     color: white;
     font-size: 2.5rem;
@@ -56,18 +57,15 @@ body {
 
 .hero article {
     position: absolute;
-    bottom: 10px;
-    left: 10px;
+    bottom: 20px;
+    left: 20px;
     background-color: rgba(0, 0, 0, 0.6);
-    padding: 10px;
-    max-width: fit-content;
+    padding: 20px;
     color: aquamarine;
     z-index: 10;
 }
 
 .hero article img {
     float: right;
-    margin-left: 10px;
-    width: 1px; /* Adjust size as needed */
-    height: 1px; /* Adjust size as needed */
+    margin-left: 20px;
 }
