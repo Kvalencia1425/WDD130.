@@ -1,0 +1,73 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root {
+    --primary-color: #336699;
+    --secondary-color: #FFCC00;
+    --text-color: #333333;
+    --link-color: #336699;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto', sans-serif; /* Replace with your selected font */
+    color: var(--text-color);
+}
+
+/* Paragraphs */
+p {
+    color: var(--text-color);
+}
+
+/* Remove underlines from links */
+a {
+    text-decoration: none;
+}
+
+/* Limit page width */
+body {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Hero section */
+.hero {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 20px;
+    left: 50px;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 2.5rem;
+    z-index: 10;
+}
+
+.hero article {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    max-width: fit-content;
+    color: aquamarine;
+    z-index: 10;
+}
+
+.hero article img {
+    float: right;
+    margin-left: 10px;
+    width: 1px; /* Adjust size as needed */
+    height: 1px; /* Adjust size as needed */
+}
