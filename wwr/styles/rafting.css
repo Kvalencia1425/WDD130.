@@ -1,71 +1,231 @@
-/* Import Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=font-name&family=optional-2nd-font-name&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+NG+Modern:wght@100..400&display=swap');
 
-/* Root variables */
 :root {
-    --primary-color: #336699;
-    --secondary-color: #FFCC00;
-    --text-color: #333333;
-    --link-color: #336699;
+    --primary-color: #9d695a;
+    --secondary-color: #d496a7;
+    --accent1-color: #a1cdf1;
+    --accent2-color: #78E0DC;
+
+    --heading-font: '50px', serif;
+    --paragraph-font: '50', serif;
+
+    --nav-background-color: #de6b48;
+    --nav-link-color: #35b181;
+    --nav-hover-link-color: #f4b9b2;
+    --nav-hover-background-color: #daedbd;
 }
 
-/* Headings */
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'YourSelectedFont', sans-serif; /* Replace 'YourSelectedFont' with your chosen font */
-    color: var(--text-color);
+h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    font-size: 2rem;
+    text-align: center;
+
 }
 
-/* Paragraphs */
-p {
-    color: var(--text-color);
-}
-
-/* Remove underlines from links */
-a {
-    text-decoration: none;
-}
-
-/* Limit page width and center align content */
-body {
-    max-width: 1200px; /* Adjust as per your design */
-    margin: 0 auto; /* Center align content */
-    padding: 20px; /* Add padding for better readability */
-}
-
-/* Hero section */
-.hero {
-    position: relative;
+h1 {
+    position: absolute;
+	margin: 1rem;
+	border: 1px solid rgba(0,0,0,.1);
+	padding: 15px;
+	background-color: black;
+    opacity: .8;
+	color: #fff;
+    display: block;
     width: 100%;
-    overflow: hidden;
+    max-width: 95%;
+    height: auto;
+    left: 0%;
+    top: 50%;
+    text-align: center;
+
 }
 
-.hero img {
+main img{
+	border: 5px solid rgba(0,0,0,.1);
+}
+
+header {
+    padding: 15px;
+    background-color: var(--accent1-color);
+    font-size: 10px;
+    border: 5px solid rgba(0,0,0,.1);
+}
+
+header img{
+    position: relative;
+    top: 30px;
+    left:90px;
+    height: 170px;
+    
+}
+
+p {
+    padding: 1px;
+    font-family: "Playwrite NG Modern", cursive;
+    font-size: 17px;
+}
+
+
+nav a {
+    display: block;
+    color: var(--nav-link-color);
+    text-decoration: none;
+    padding: 1rem;
+}
+
+nav a:link, nav a:visited {
+    color: var(--nav-link-color);
+}
+
+nav a:hover {
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
+}
+
+
+
+footer {
+    border: 5px solid rgba(0,0,0,.1);
+
+}
+
+.grids {
+    display: grid;
+    align-items: center;
+    font-family: var(--heading-font);
+    color: var(--primary-color);  
+    text-align: center;
+    
+
+}
+
+.sociallinks {
+    grid-column: 5/5;
+    margin: 1rem;
+    font-size: 1.2rem;
+    display: flex;
+    /* float: right; */
+    
+}
+
+
+
+.hero img{
     display: block;
     width: 100%;
     height: auto;
 }
 
-.hero h1 {
+.inside{
     position: absolute;
-    top: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    color: white;
-    font-size: 2.5rem;
-    z-index: 10;
+	margin: 10px;
+	border: 1px solid rgba(0,0,0,.1);
+	padding: 15px;
+	background-color: #247;
+	color: white;
+    display: block;
+    width: 80%;
+    height: auto;
+    left: 8%;
+    top: 70%;
+    opacity: .8;
 }
 
-.hero article {
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
-    background-color: rgba(0, 0, 0, 0.6);
-    padding: 20px;
-    color: aquamarine;
-    z-index: 10;
-}
-
-.hero article img {
+.inside img{
     float: right;
-    margin-left: 20px;
+	margin: 0 0 10px 15px;
+	border: 1px solid #000;
+	padding: 3px;
+	background-color: #bbb;
+	width: 250px;
+	height: auto;
 }
+
+.inside h2{
+    color: white;
+}
+
+.sociallinks img{
+    height: 50px;
+}
+
+.history-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 10% 20% 30%;
+}
+
+.history-border {
+    text-align: center;
+    font-size: 1.3rem;
+	border: 5px solid rgba(0,0,0,.1);
+    padding: 10px
+}
+
+div p {
+    font-size: 15px;
+}
+
+div img {
+    display: block;
+    width: 300px;
+    height: 150px;
+}
+
+.home-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr .2fr;
+    grid-template-rows: 10% 20% 30%;
+
+    padding: 2px;
+    /* background-color: #247; */
+}
+
+.flexbox {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px;
+    font-size: 20px;
+    background-color: black;
+    font-size: 1.2rem;
+    height: 50px;
+    grid-row-start: 3;
+    grid-column-start: 2;
+    
+}
+
+
+
+.figures {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    /* grid-auto-rows: minmax(90px, auto); */
+    max-width: 110px;
+    margin: -10px;
+
+  }
+  
+  figure img {
+    max-width: 110px;
+    max-height: 60%;
+    
+  }
+  
+  figcaption {
+    background-color: #222;
+    color: #fff;
+    font: italic smaller sans-serif;
+    padding: 3px;
+    text-align: center;
+    border: thin #c0c0c0 solid;
+    
+  }
+
+
+  section {
+    border: 5px solid rgba(0,0,0,.1);
+
+  }
+
