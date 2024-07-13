@@ -1,13 +1,4 @@
-header, footer {
-  max-width: 840px;
-  margin: 0 auto; /* Center the content */
-}
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
 nav {
   background-color: steelblue;
@@ -17,80 +8,122 @@ nav {
   align-items: center;
 }
 
+
+body {
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+}
+
 nav a {
   display: block;
   padding: 0.5rem;
   text-decoration: none;
   font-size: 1.2rem;
   font-weight: 700;
-  color: #fff; 
+  color: #fff
 }
 
 h1 {
+  display: grid;
   color: steelblue;
-  border-bottom: 2px solid steelblue; /* Add bottom border */
+  padding: .5rem;
+  border: 1px solid steelblue;
+  justify-content: center;
+
+
 }
 
-
 img {
-  width: 200px; 
+  width: 150px;
+  height: auto;
+  border: 1px solid steelblue;
+  padding: 2px;
+  box-shadow: 0 0 30px ;
+}
+
+p {
+  margin: 1rem;
+  padding: 10px;
+}
+
+.grid {
+  display: grid;
+  align-items: center;
+}
+
+main {
+  grid-column: 2/3;
+  margin: 1rem;
+}
+
+aside {
+  width: 20rem;
+  position: relative;
+  grid-column: 1;
+  grid-row: 1;
+  
+}
+
+aside h2 {
+  position: absolute;
+  top: 20px;
+  left: 100px;
+}
+
+h2 {
+  display: block;
+  font-size: 1.5em;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+
+aside img {
+  width: 280px;
+  height: auto;
+  
+}
+
+main img {
+  width: 150px;
   height: auto;
   border: 1px solid steelblue;
   padding: 2px;
   box-shadow: 0 0 30px gray;
-  float: right; /* Float the image to the right */
-  margin-left: 20px; /* Provide some space between the image and text */
+  float: right;
+  margin: 0 0 1rem 1rem;
 }
 
-p {
-  padding: 10px;
+p { padding: 0;}
+
+footer {
+  margin-top: 1em;
+  border-top: 1px solid #000;
+  text-align: center;
 }
 
-ul {
-  list-style-type: none;
-  padding: 10px;
-}
-
-ul li {
-  margin-bottom: 10px;
-}
-
-.box {
-  margin: 1rem;
-  padding: 1rem;
-  background-color: lightgray;
-  color: darkslategray;
-  border: 1px solid gray;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 /* Class Selectors */
 
 .box {
-  position: relative; /* Set aside container to relative positioning */
   margin: 1rem;
+  border: 1px solid rgba(0, 0, 0, .5);
   padding: 1rem;
-  background-color: lightgray;
-  color: darkslategray;
-  border: 1px solid gray;
+  background-color: lightgrey;
+  color: black
 }
 
-.box img {
-  width: 100%; /* Ensure image fills the container */
-  height: auto;
-  display: block;
+.indent {
+  padding-left: 2rem
 }
 
-.overlay-heading {
-  position: absolute;
-  top: 10px; /* Adjust position from the top */
-  left: 10px; /* Adjust position from the left */
-  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
-  padding: 10px;
-  border: 1px solid gray;
-  color: steelblue;
+header, footer {
+  max-width: 840px;
+  margin: 0 auto;
 }
-
-aside {
-  width: 20em;
-  text-align: center;
-}
-
